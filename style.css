@@ -1,0 +1,247 @@
+/* Import Font */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fff6f6, #e7f6f5);
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #f7b7b7, #e8d7f5);
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 15px 15px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6F61;
+}
+
+/* Order Button */
+.order-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.order-btn:hover {
+    transform: scale(1.1);
+    background-color: #e85742;
+}
+
+/* Container untuk Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Image Section */
+.image-section {
+    flex: 1;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 182, 193, 0.85);
+    color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+
+/* Content Section */
+.content-section {
+    flex: 1;
+    padding: 2rem;
+    background: #fefefe;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+/* Title Styling */
+.content-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Description Styling */
+.content-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pastel-pink {
+    background-color: #FFD3D3;
+    color: #333;
+}
+
+.pastel-green {
+    background-color: #C6E6E1;
+    color: #333;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu-preview {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    width: calc(33.33% - 1rem);
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    background: #FFFAF0;
+}
+
+.menu-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-details {
+    text-align: center;
+}
+
+.menu-name {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.menu-description {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #FF6F61;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .image-section, .content-section {
+        flex: 1 1 100%;
+    }
+
+    
+    .menu-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
